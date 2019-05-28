@@ -1,0 +1,365 @@
+/* backgroun-color : #099dbb;
+ */
+
+* {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+}
+.hello {
+      height: 100px;
+      width: 100px;
+      border: 9px solid blue;
+      border-radius: 50%;
+}
+.one {
+      background: linear-gradient(to right, #02b0d3, #01697e) ;
+      height: 40px;
+      padding:1px 85px 0px 85px;
+      color: white;
+      
+}
+.another button {
+      font-size: 13px;
+}
+.one button i {
+      padding-right: 10px;
+      
+}
+.notify {
+      background-color: rgba(7, 7, 158, 0.459);
+      padding: 4px 30px;
+      font-size: 15px;
+      
+      
+}
+.another {
+
+}
+
+.navbar {
+      background-color: white;
+      font-family: 'EB Garamond', serif;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 500;
+}
+
+.navbar-brand img {
+    height: 65px;
+    left: 40%;
+    left: 200px;
+    padding-left: 120px;
+    width: 310px;
+
+}
+.navbar-nav a {
+      padding: 0px 100px ;
+}
+.nav-item {
+      color: black;
+}
+.nav-item:hover {
+      background: rgb(62, 189, 248);
+      font-color: white;
+   /* box-shadow:0px 0px 2px 4px rgba(85, 117, 129, 0.63); */
+      transition: .3s;
+  }
+  .navbar-nav .nav-item .active {
+      height: 30px;
+      width: 100px;
+     
+      background: rgb(231, 135, 9);
+     
+      text-align: center;
+    
+      vertical-align: bottom;
+}
+
+
+/* carousel styling */
+.carousel img {
+      height: 80vh;
+      width: 100%;
+      animation-name: background-change;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-timing-function: ease-in;
+      position: relative;
+}
+@keyframes  background-change {
+      0%{
+            opacity: 0;
+            
+        }
+        20%{
+            background: linear-gradient(to right, #02b0d3, #01697e) ;
+            
+        }
+        100%{
+            background: linear-gradient(to right, #057186, #01697e) ;
+            
+        }
+}
+
+.carousel-caption {
+     position: absolute; 
+     top: 200px;
+     left: 0px;
+     height: 30%;
+     width: 100%;
+     text-align: left;
+     padding-left: 20px;
+     background: linear-gradient(to right, rgba(108, 110, 110, 0.664), rgba(178, 182, 184, 0.336), rgba(3, 65, 107, 0.062));
+     animation-name: Move-to-right;
+     animation-duration: 1.5s;
+     animation-delay: 0.3s;
+     animation-timing-function: ease-in;
+ 
+}
+@keyframes Move-to-right{
+      0%{
+          opacity: 0;
+          transform: translateX(-100px);
+      }
+      80%{
+          opacity: .6;
+          transform: translateX(15px);
+      }
+      100%{
+          opacity: 1;
+          transform: translate(0)
+      }
+  }
+.carousel-indicators li {
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      background: transparent;
+      border: 1px solid rgb(223, 85, 6);
+
+}
+.carousel-indicators .active {
+      border: 1px solid rgb(223, 85, 6);
+      background-color: rgb(223, 85, 6);
+      
+}
+.carousel-item{
+      transition-property: backgroun;
+      transition-duration: 0.4s;
+     
+}
+.carousel-item {
+    background: linear-gradient(to right, rgb(2, 71, 99), rgb(11, 91, 122), rgba(3, 65, 107, 0.062));
+}
+.carousel .big-button {
+      position: absolute;
+      margin-left: 50px;
+      margin-top: -130px;
+      animation-name: Move-to-right;
+      animation-duration: 1.5s;
+      animation-delay: 0.3s;
+      animation-timing-function: ease-in;
+}
+
+.big-button {
+       
+     
+}
+.big-button .btn {
+      width: 300px;
+      padding: 15px 0px; 
+      border: 1px solid orangered;
+      border-radius: 30px;
+}
+.big-button .active, .send-button {
+      border: none;
+     
+      background: linear-gradient(to right,
+                                   rgb(235, 62, 9),
+                                   rgba(211, 146, 6, 0.925),
+                                   rgb(224, 117, 17));
+}
+.big-button .btn:hover {
+    width: 300px; 
+    border-radius: 30px;
+    background: rgb(5, 108, 156);
+    border: 1px solid rgb(6, 116, 167);
+    box-shadow:3px 3px 4px 4px rgba(167, 196, 207, 0.63);
+    transition: .3s;
+}
+
+/* Services */
+
+.services .next .forth-image{
+     padding-left: 180px;
+}
+
+
+.services img {
+      height: 350px;
+      margin-top: 50px;
+    
+}
+.services img:hover {
+      filter: grayscale(10);
+}
+
+/* sign Up */
+.sign-up {
+      margin: 50px 0px 0px 0px;
+      height: 120vh;
+      width: 100%;
+      background:linear-gradient(rgba(12, 12, 150, 0.418), 
+                                   rgba(12, 12, 150, 0.664)),
+                                   url("images/sign-up.jpg");
+      position: relative; 
+      padding: 100px 100px 100px 70px;                            
+}
+.content {
+     
+}
+hr {
+      width: 150px;
+      border: 2px solid orangered;
+}
+.why-us {
+      font-size: 15px;
+      line-height: 35px;
+      
+}
+
+.card {
+      width: 100%;
+      height:120%;
+      border: none;  
+      position: absolute;
+      background: linear-gradient(to right, #02b0d3, #01697e) ;
+
+}
+.card-title {
+      font-size: 35px;
+      font-weight: 400;
+      margin: 
+}
+     
+
+.card-body form input, .send-button {
+      width: 450px;
+      height: 45px;
+      margin: 0px 25px 35px 25px;
+      padding-left: 15px;
+      border: none;
+      font-size: 20px;
+      border-radius: 10px;
+
+}
+.send-button {
+      margin-left: 50px;
+      
+}
+.send-button:hover {
+       
+}
+.events {
+
+      background: #8494971c;
+      font-size: 15px;
+      line-height: 35px;
+      padding: 50px 130px 70px 70px;
+}
+.eve-heading {
+      font-size: 40px;
+      color:  #555f618a;
+}
+.events h4{
+     font-size: 15px;
+     padding-top: 20px;
+}
+.events .card {
+      height: 75%;
+      width: 94%;
+      margin-top: 60px;
+      background: rgba(51, 48, 48, 0.781);
+      color: white;
+      font-weight: 400;
+}
+
+.eve img{
+   height: 350px;
+   width: 500px;
+   margin-bottom: 20px;
+}
+.eve .big-button {
+      margin: 40px 120px;
+     
+}
+.featuring {
+      height: 90vh;
+      background: linear-gradient(to right, #02b0d3, #01697e) ;
+}
+.students {
+      height: 70vh;
+      margin-bottom: 300px;
+}
+.students .second {
+      margin-top: 300px;
+}
+.students .card {
+      width: 250px;
+      background: #00a4b9a8;
+}
+.students img{
+      height: 150px;
+      width: 150px;
+      margin-left: 20px;
+      border-radius: 100px;
+      border: 4px solid rgb(41, 82, 136);
+}
+.students .bio h1 {
+      font-size: 20px;
+      color: orange;
+}
+.footer {
+      padding: 40px 100px;
+      background: linear-gradient(rgba(5, 5, 5, 0.795), 
+                                    rgba(15, 15, 15, 0.842)),
+                                      url("images/sign-up.jpg");
+      
+}
+.footer .describe  {
+      margin-top: 60px;
+      font-size: 15px;
+      line-height: 40px;
+}
+.footer img {
+
+}
+.footer h1 {
+      font-size: 30px;
+      font-weight: 200;
+      color: orange;
+} 
+.footer a {
+      color: white;
+      font-size: 18px;
+      
+}
+.footer .links a {
+       display: block; 
+       padding: 10px;
+}
+.footer .highlight {
+      color: orange;
+}
+.contact h3{
+      font-size: 20px;
+      color: orange;
+}
+.contact h2 {
+      font-size: 20px;
+}
+
+.sending {
+      display: inline-block;
+}
